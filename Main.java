@@ -4,7 +4,7 @@
 import java.util.*;
 
 public class Main{
-	static void humanGuesser{
+	static void humanGuesser(){
 		System.out.print("human guesser");
 		int answer = (int)(Math.random() * 101);
 		boolean keepGoing = true;
@@ -16,17 +16,17 @@ public class Main{
 			Scanner input = new Scanner(System.in);
 			guess = input.nextline();
 			System.out.println();
-			if(guess == answer){
+			if(int.class(guess) == answer){
 				System.out.println("got it!");
 				keepGoing = false;
 			}//end if
-			else if(guess < answer){
-				System.out.println("too low")
+			else if(int.class(guess) < answer){
+				System.out.println("too low");
 			}//end if
-			else if(guess > answer){
+			else if(int.class(guess) > answer){
 				System.out.println("too high");
 			}//end if
-			counter = counter + 1
+			counter = counter + 1;
 		}//end while
 	}// end humanGuesser
 	
@@ -38,7 +38,10 @@ public class Main{
 			Systen.out.println("1) Human Guesser");
 			System.out.println("2) Computer Guesser");
 			String choice = input.nextline();
-			if(String.valueOf(choice) == ""
+			if(choice.equals("0")){
+				System.out.println("Goodbye!");
+				keepGoing = false;
+			}//end if
 		}//end while
 	}//end main
 }//end class

@@ -1,8 +1,8 @@
 run: Main.class
-	java Main.class
+	java Main
 
 test: Test.class
-	java Test.class
+	java Test
 
 Main.class: Main.java
 	javac Main.java

@@ -1,11 +1,11 @@
-run: Main.class
-	java Main
+run: Guesser.class
+	java Guesser
 
 test: Test.class
 	java Test
 
-Main.class: Main.java
-	javac Main.java
+Guesser.class: Guesser.java
+	javac Guesser.java
 
 Test.class: Test.java
 	javac Test.java

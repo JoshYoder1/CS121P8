@@ -34,9 +34,11 @@ public class Main{
 		boolean keepGoing = true;
 		Scanner choice = new Scanner(System.in);
 		while (keepGoing){
-			system.out.println("0) Exit");
-			systen.out.println("1) Human Guesser");
-
+			System.out.println("0) Exit");
+			Systen.out.println("1) Human Guesser");
+			System.out.println("2) Computer Guesser");
+			String choice = input.nextline();
+			if(String.valueOf(choice) == ""
 		}//end while
 	}//end main
 }//end class

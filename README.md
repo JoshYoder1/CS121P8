@@ -44,10 +44,18 @@ upper is 100
 lower is 1
 counter = 1
 
-while KeepGoing:
+while keepGoing:
 	guess = getMedian(upper, lower)
 	output {counter} + ") I guess " + {guess}
 	output "Too (H)igh, Too (L)ow, (C)orrect"
+	result = input
+	if result is "H":
+		upper is guess
+	else if result is "L":
+		lower is guess
+	else if result is "C":
+		keepGoing is False
+	counter is counter + 1
 ```
 ### getMedian(int upper, int lower)
 ```
